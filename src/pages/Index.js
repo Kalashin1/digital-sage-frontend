@@ -18,6 +18,21 @@ export default function Home(){
     }
   ]
 
+  let topics = [
+    {
+      icon: 'fas fa-microchip',
+      language: 'software Engineering'
+    },
+    {
+      icon: 'fas fa-cogs',
+      language: 'Cyber Security'
+    },
+    {
+      icon: 'fab fa-bitcoin',
+      language: 'Blockchain'
+    }
+  ]
+
   let frameworks = [
     {
       icon: 'fab fa-aws',
@@ -40,6 +55,14 @@ export default function Home(){
         <div className='grid lg:grid-cols-2 gap-6'>
           <ArticleHeading />
           <ArticleHeading />
+        </div>
+        <h1 className="text-4xl font-bold my-6 border-b w-44">Topics</h1>
+        {/* Topics */}
+        <div className='grid lg:grid-cols-3 gap-6'>
+          { topics.map(icon => (
+            <LanguageHeader language={icon.language} 
+              LanguageIcon={icon.icon} />
+          ))  }
         </div>
         <h1 className="text-4xl font-bold my-6 border-b w-44">Languages</h1>
         {/* Languages */}

@@ -4,15 +4,15 @@ export default function Sidebar () {
       <h1 className="sidebar-title">categories</h1>
       <ul className="sidebar-menu">
         <li className="sidebar-menu-item">
-          <span className="sidebar-menu-item-text">Software Engineering</span>
-          <i className="fas fa-code sidebar-menu-item-icon"></i>
+          <span className="sidebar-menu-item-text">Write An Article</span>
+          <i className="fas fa-edit sidebar-menu-item-icon"></i>
         </li>
       </ul>
 
-      {/* <h1 className="sidebar-title">Hot Articles</h1>
-      <ul>
-        <li className="sidebar-menu-item">Intro To CSS</li>
-      </ul> */}
+      <h1 className="sidebar-title">FAQ</h1>
+      <ul className="sidebar-menu">
+        <li className="sidebar-menu-item">Policy</li>
+      </ul>
     </aside>
   )
 }
