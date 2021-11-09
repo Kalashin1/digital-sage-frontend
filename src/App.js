@@ -2,6 +2,7 @@ import Home from './pages/Index'
 import Login from './pages/Login'
 import Signup from './pages/Signup'
 import Profile from './pages/Profile'
+import PostsDashboard from './pages/PostsDashboard'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/profile/:id" element={<Profile />} />
+        <Route path="/user-posts/:id" element={<PostsDashboard />} />
       </Routes>
       
     </Router>
