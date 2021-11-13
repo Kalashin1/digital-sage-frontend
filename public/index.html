@@ -17,14 +17,20 @@
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@400;700&display=swap" rel="stylesheet">
     <style>
+      @font-face{
+        font-family: "Dongle";
+        src: url('/Dongle-Bold.ttf');
+      }
       body {
         font-family: 'Dongle', sans-serif !important;
       }
     </style>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/js/all.min.js" defer integrity="sha512-cyAbuGborsD25bhT/uz++wPqrh5cqPh1ULJz4NSpN9ktWcA6Hnh9g+CWKeNx2R0fgQt+ybRXdabSBgYXkQTTmA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="/all.min.css" />
+    <link rel="stylesheet" href="/select2.min.css" />
+    <script src="/all.min.js" defer ></script>
+    <script scr ="/jquery.min.js" defer></script>
+    <script scr ="/select2.min.js" defer></script>
     <title>React App</title>
   </head>
   <body class="bg-gray-800">
@@ -40,5 +46,10 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script>
+      $(document).ready(function() {
+        $('#select-2-multiple').select2();
+      });
+    </script>
   </body>
 </html>
